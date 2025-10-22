@@ -2,6 +2,12 @@ import fs from "fs";
 import path from "path";
 
 export default function handler(req, res) {
+  console.log("✅ API /api/login received request");
+  // phần code của bạn giữ nguyên...
+}
+
+
+export default function handler(req, res) {
   try {
     // 👉 Đường dẫn tuyệt đối tới users.json
     const filePath = path.join(process.cwd(), "api", "users.json");
